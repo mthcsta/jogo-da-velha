@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed May 19 00:04:52 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : hash_game
+Top-level Entity Name : hash_game
+Family : Cyclone IV E
+Device : EP4CE6F17C6
+Timing Models : Final
+Total logic elements : 64 / 6,272 ( 1 % )
+    Total combinational functions : 64 / 6,272 ( 1 % )
+    Dedicated logic registers : 19 / 6,272 ( < 1 % )
+Total registers : 19
+Total pins : 78 / 180 ( 43 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

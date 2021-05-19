@@ -1,0 +1,248 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "05/18/2021 02:15:08"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          hash_game
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module hash_game_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg APERTOU_J1;
+reg APERTOU_J2;
+reg [8:0] MARCADOS_J1;
+reg [8:0] MARCADOS_J2;
+reg PARTIDA_ATIVA;
+reg [3:0] SEL_J1;
+reg [3:0] SEL_J2;
+reg VEZ_DO_JOGADOR;
+// wires                                               
+wire [6:0] QUADRO0;
+wire [6:0] QUADRO1;
+wire [6:0] QUADRO2;
+wire [6:0] QUADRO3;
+wire [6:0] QUADRO4;
+wire [6:0] QUADRO5;
+wire [6:0] QUADRO6;
+wire [6:0] QUADRO7;
+wire [6:0] QUADRO8;
+wire [3:0] SAIDA_J1;
+wire [3:0] SAIDA_J2;
+
+// assign statements (if any)                          
+hash_game i1 (
+// port map - connection between master ports and signals/registers   
+	.APERTOU_J1(APERTOU_J1),
+	.APERTOU_J2(APERTOU_J2),
+	.MARCADOS_J1(MARCADOS_J1),
+	.MARCADOS_J2(MARCADOS_J2),
+	.PARTIDA_ATIVA(PARTIDA_ATIVA),
+	.QUADRO0(QUADRO0),
+	.QUADRO1(QUADRO1),
+	.QUADRO2(QUADRO2),
+	.QUADRO3(QUADRO3),
+	.QUADRO4(QUADRO4),
+	.QUADRO5(QUADRO5),
+	.QUADRO6(QUADRO6),
+	.QUADRO7(QUADRO7),
+	.QUADRO8(QUADRO8),
+	.SAIDA_J1(SAIDA_J1),
+	.SAIDA_J2(SAIDA_J2),
+	.SEL_J1(SEL_J1),
+	.SEL_J2(SEL_J2),
+	.VEZ_DO_JOGADOR(VEZ_DO_JOGADOR)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// APERTOU_J1
+initial
+begin
+	APERTOU_J1 = 1'b0;
+end 
+
+// APERTOU_J2
+initial
+begin
+	APERTOU_J2 = 1'b0;
+end 
+// MARCADOS_J1[ 8 ]
+initial
+begin
+	MARCADOS_J1[8] = 1'b0;
+end 
+// MARCADOS_J1[ 7 ]
+initial
+begin
+	MARCADOS_J1[7] = 1'b0;
+end 
+// MARCADOS_J1[ 6 ]
+initial
+begin
+	MARCADOS_J1[6] = 1'b0;
+end 
+// MARCADOS_J1[ 5 ]
+initial
+begin
+	MARCADOS_J1[5] = 1'b0;
+end 
+// MARCADOS_J1[ 4 ]
+initial
+begin
+	MARCADOS_J1[4] = 1'b0;
+end 
+// MARCADOS_J1[ 3 ]
+initial
+begin
+	MARCADOS_J1[3] = 1'b0;
+end 
+// MARCADOS_J1[ 2 ]
+initial
+begin
+	MARCADOS_J1[2] = 1'b0;
+	MARCADOS_J1[2] = #20000 1'b1;
+	MARCADOS_J1[2] = #180000 1'b0;
+end 
+// MARCADOS_J1[ 1 ]
+initial
+begin
+	MARCADOS_J1[1] = 1'b0;
+	MARCADOS_J1[1] = #20000 1'b1;
+	MARCADOS_J1[1] = #180000 1'b0;
+end 
+// MARCADOS_J1[ 0 ]
+initial
+begin
+	MARCADOS_J1[0] = 1'b0;
+	MARCADOS_J1[0] = #20000 1'b1;
+	MARCADOS_J1[0] = #180000 1'b0;
+end 
+// MARCADOS_J2[ 8 ]
+initial
+begin
+	MARCADOS_J2[8] = 1'b0;
+end 
+// MARCADOS_J2[ 7 ]
+initial
+begin
+	MARCADOS_J2[7] = 1'b0;
+end 
+// MARCADOS_J2[ 6 ]
+initial
+begin
+	MARCADOS_J2[6] = 1'b0;
+end 
+// MARCADOS_J2[ 5 ]
+initial
+begin
+	MARCADOS_J2[5] = 1'b0;
+end 
+// MARCADOS_J2[ 4 ]
+initial
+begin
+	MARCADOS_J2[4] = 1'b0;
+end 
+// MARCADOS_J2[ 3 ]
+initial
+begin
+	MARCADOS_J2[3] = 1'b0;
+end 
+// MARCADOS_J2[ 2 ]
+initial
+begin
+	MARCADOS_J2[2] = 1'b0;
+	MARCADOS_J2[2] = #200000 1'b1;
+	MARCADOS_J2[2] = #180000 1'b0;
+end 
+// MARCADOS_J2[ 1 ]
+initial
+begin
+	MARCADOS_J2[1] = 1'b0;
+	MARCADOS_J2[1] = #200000 1'b1;
+	MARCADOS_J2[1] = #180000 1'b0;
+end 
+// MARCADOS_J2[ 0 ]
+initial
+begin
+	MARCADOS_J2[0] = 1'b0;
+	MARCADOS_J2[0] = #200000 1'b1;
+	MARCADOS_J2[0] = #180000 1'b0;
+end 
+
+// PARTIDA_ATIVA
+initial
+begin
+	PARTIDA_ATIVA = 1'b0;
+end 
+// SEL_J1[ 3 ]
+initial
+begin
+	SEL_J1[3] = 1'b0;
+end 
+// SEL_J1[ 2 ]
+initial
+begin
+	SEL_J1[2] = 1'b0;
+end 
+// SEL_J1[ 1 ]
+initial
+begin
+	SEL_J1[1] = 1'b0;
+end 
+// SEL_J1[ 0 ]
+initial
+begin
+	SEL_J1[0] = 1'b0;
+end 
+// SEL_J2[ 3 ]
+initial
+begin
+	SEL_J2[3] = 1'b0;
+end 
+// SEL_J2[ 2 ]
+initial
+begin
+	SEL_J2[2] = 1'b0;
+end 
+// SEL_J2[ 1 ]
+initial
+begin
+	SEL_J2[1] = 1'b0;
+end 
+// SEL_J2[ 0 ]
+initial
+begin
+	SEL_J2[0] = 1'b0;
+end 
+
+// VEZ_DO_JOGADOR
+initial
+begin
+	VEZ_DO_JOGADOR = 1'b0;
+end 
+endmodule
+

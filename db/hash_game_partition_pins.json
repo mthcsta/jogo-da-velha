@@ -1,0 +1,209 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "VENCEU",
+					"strict" : false
+				},
+				{
+					"name" : "VEZ_DO_JOGADOR",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO5[6]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO5[4]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO6[6]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO6[4]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO6[1]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO7[6]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO7[4]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO7[1]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO8[6]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO8[4]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO8[1]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO_SEL[8]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO_SEL[7]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO_SEL[6]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO_SEL[5]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO_SEL[4]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO_SEL[3]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO_SEL[2]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO_SEL[1]",
+					"strict" : false
+				},
+				{
+					"name" : "QUADRO_SEL[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "SEL_J2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SEL_J2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "APERTOU_J2",
+					"strict" : false
+				},
+				{
+					"name" : "SEL_J2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SEL_J2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "SEL_J1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SEL_J1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "APERTOU_J1",
+					"strict" : false
+				},
+				{
+					"name" : "SEL_J1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SEL_J1[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
