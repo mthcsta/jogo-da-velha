@@ -1,5 +1,5 @@
 Analysis & Synthesis report for hash_game
-Wed May 19 00:10:12 2021
+Wed May 19 00:25:07 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,13 +43,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed May 19 00:10:12 2021       ;
+; Analysis & Synthesis Status        ; Successful - Wed May 19 00:25:07 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; hash_game                                   ;
 ; Top-level Entity Name              ; hash_game                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 64                                          ;
-;     Total combinational functions  ; 64                                          ;
+; Total logic elements               ; 73                                          ;
+;     Total combinational functions  ; 73                                          ;
 ;     Dedicated logic registers      ; 19                                          ;
 ; Total registers                    ; 19                                          ;
 ; Total pins                         ; 87                                          ;
@@ -187,16 +187,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 64        ;
+; Estimated Total logic elements              ; 73        ;
 ;                                             ;           ;
-; Total combinational functions               ; 64        ;
+; Total combinational functions               ; 73        ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 42        ;
-;     -- 3 input functions                    ; 9         ;
+;     -- 4 input functions                    ; 39        ;
+;     -- 3 input functions                    ; 21        ;
 ;     -- <=2 input functions                  ; 13        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 64        ;
+;     -- normal mode                          ; 73        ;
 ;     -- arithmetic mode                      ; 0         ;
 ;                                             ;           ;
 ; Total registers                             ; 19        ;
@@ -209,8 +209,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 19        ;
-; Total fan-out                               ; 384       ;
-; Average fan-out                             ; 1.49      ;
+; Total fan-out                               ; 409       ;
+; Average fan-out                             ; 1.54      ;
 +---------------------------------------------+-----------+
 
 
@@ -219,9 +219,9 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node          ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                  ; Entity Name         ; Library Name ;
 +-------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+---------------------+--------------+
-; |hash_game                          ; 64 (1)              ; 19 (1)                    ; 0           ; 0            ; 0       ; 0         ; 87   ; 0            ; |hash_game                                                                           ; hash_game           ; work         ;
-;    |controle:CONTROLE_1|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|controle:CONTROLE_1                                                       ; controle            ; work         ;
-;    |controle:CONTROLE_2|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|controle:CONTROLE_2                                                       ; controle            ; work         ;
+; |hash_game                          ; 73 (1)              ; 19 (1)                    ; 0           ; 0            ; 0       ; 0         ; 87   ; 0            ; |hash_game                                                                           ; hash_game           ; work         ;
+;    |controle:CONTROLE_1|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|controle:CONTROLE_1                                                       ; controle            ; work         ;
+;    |controle:CONTROLE_2|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|controle:CONTROLE_2                                                       ; controle            ; work         ;
 ;    |memoria:MEMO_J1|                ; 18 (0)              ; 9 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J1                                                           ; memoria             ; work         ;
 ;       |memoria1bit:inst10|          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J1|memoria1bit:inst10                                        ; memoria1bit         ; work         ;
 ;       |memoria1bit:inst2|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J1|memoria1bit:inst2                                         ; memoria1bit         ; work         ;
@@ -231,10 +231,10 @@ https://fpgasoftware.intel.com/eula.
 ;       |memoria1bit:inst6|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J1|memoria1bit:inst6                                         ; memoria1bit         ; work         ;
 ;       |memoria1bit:inst7|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J1|memoria1bit:inst7                                         ; memoria1bit         ; work         ;
 ;       |memoria1bit:inst8|           ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J1|memoria1bit:inst8                                         ; memoria1bit         ; work         ;
-;       |memoria1bit:inst9|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J1|memoria1bit:inst9                                         ; memoria1bit         ; work         ;
-;       |seletor:inst|                ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J1|seletor:inst                                              ; seletor             ; work         ;
+;       |memoria1bit:inst9|           ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J1|memoria1bit:inst9                                         ; memoria1bit         ; work         ;
+;       |seletor:inst|                ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J1|seletor:inst                                              ; seletor             ; work         ;
 ;    |memoria:MEMO_J2|                ; 19 (0)              ; 9 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J2                                                           ; memoria             ; work         ;
-;       |memoria1bit:inst10|          ; 3 (3)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J2|memoria1bit:inst10                                        ; memoria1bit         ; work         ;
+;       |memoria1bit:inst10|          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J2|memoria1bit:inst10                                        ; memoria1bit         ; work         ;
 ;       |memoria1bit:inst2|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J2|memoria1bit:inst2                                         ; memoria1bit         ; work         ;
 ;       |memoria1bit:inst3|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J2|memoria1bit:inst3                                         ; memoria1bit         ; work         ;
 ;       |memoria1bit:inst4|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J2|memoria1bit:inst4                                         ; memoria1bit         ; work         ;
@@ -242,8 +242,8 @@ https://fpgasoftware.intel.com/eula.
 ;       |memoria1bit:inst6|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J2|memoria1bit:inst6                                         ; memoria1bit         ; work         ;
 ;       |memoria1bit:inst7|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J2|memoria1bit:inst7                                         ; memoria1bit         ; work         ;
 ;       |memoria1bit:inst8|           ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J2|memoria1bit:inst8                                         ; memoria1bit         ; work         ;
-;       |memoria1bit:inst9|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J2|memoria1bit:inst9                                         ; memoria1bit         ; work         ;
-;       |seletor:inst|                ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J2|seletor:inst                                              ; seletor             ; work         ;
+;       |memoria1bit:inst9|           ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J2|memoria1bit:inst9                                         ; memoria1bit         ; work         ;
+;       |seletor:inst|                ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|memoria:MEMO_J2|seletor:inst                                              ; seletor             ; work         ;
 ;    |mux18x9_extendido:inst|         ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|mux18x9_extendido:inst                                                    ; mux18x9_extendido   ; work         ;
 ;       |multiplexador_18x9:inst99|   ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|mux18x9_extendido:inst|multiplexador_18x9:inst99                          ; multiplexador_18x9  ; work         ;
 ;          |multiplexador-2-1:inst1|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|mux18x9_extendido:inst|multiplexador_18x9:inst99|multiplexador-2-1:inst1  ; multiplexador-2-1   ; work         ;
@@ -255,7 +255,7 @@ https://fpgasoftware.intel.com/eula.
 ;          |multiplexador-2-1:inst74| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|mux18x9_extendido:inst|multiplexador_18x9:inst99|multiplexador-2-1:inst74 ; multiplexador-2-1   ; work         ;
 ;          |multiplexador-2-1:inst7|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|mux18x9_extendido:inst|multiplexador_18x9:inst99|multiplexador-2-1:inst7  ; multiplexador-2-1   ; work         ;
 ;          |multiplexador-2-1:inst|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|mux18x9_extendido:inst|multiplexador_18x9:inst99|multiplexador-2-1:inst   ; multiplexador-2-1   ; work         ;
-;    |verificar_se_venceu:inst99|     ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|verificar_se_venceu:inst99                                                ; verificar_se_venceu ; work         ;
+;    |verificar_se_venceu:inst99|     ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|verificar_se_venceu:inst99                                                ; verificar_se_venceu ; work         ;
 ;    |visores:PARTIDA_QUADROS|        ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|visores:PARTIDA_QUADROS                                                   ; visores             ; work         ;
 ;       |visor:VISOR0|                ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|visores:PARTIDA_QUADROS|visor:VISOR0                                      ; visor               ; work         ;
 ;          |decod7segment:inst|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hash_game|visores:PARTIDA_QUADROS|visor:VISOR0|decod7segment:inst                   ; decod7segment       ; work         ;
@@ -302,16 +302,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; boundary_port         ; 87                          ;
 ; cycloneiii_ff         ; 19                          ;
 ;     plain             ; 19                          ;
-; cycloneiii_lcell_comb ; 75                          ;
-;     normal            ; 75                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 9                           ;
+; cycloneiii_lcell_comb ; 84                          ;
+;     normal            ; 84                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 10                          ;
 ;         2 data inputs ; 13                          ;
-;         3 data inputs ; 9                           ;
-;         4 data inputs ; 42                          ;
+;         3 data inputs ; 21                          ;
+;         4 data inputs ; 39                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 4.31                        ;
+; Average LUT depth     ; 4.50                        ;
 +-----------------------+-----------------------------+
 
 
@@ -330,7 +330,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed May 19 00:10:02 2021
+    Info: Processing started: Wed May 19 00:24:56 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off hash_game -c hash_game
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -381,7 +381,6 @@ Warning (12125): Using design file decod7segment.bdf, which is not specified as 
     Info (12023): Found entity 1: decod7segment
 Info (12128): Elaborating entity "decod7segment" for hierarchy "visores:PARTIDA_QUADROS|visor:VISOR0|decod7segment:inst"
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "EMPATE" is stuck at GND
     Warning (13410): Pin "QUADRO0[5]" is stuck at VCC
     Warning (13410): Pin "QUADRO0[3]" is stuck at VCC
     Warning (13410): Pin "QUADRO0[2]" is stuck at VCC
@@ -421,14 +420,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 151 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 160 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 75 output pins
-    Info (21061): Implemented 64 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 41 warnings
+    Info (21061): Implemented 73 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
     Info: Peak virtual memory: 622 megabytes
-    Info: Processing ended: Wed May 19 00:10:12 2021
-    Info: Elapsed time: 00:00:10
+    Info: Processing ended: Wed May 19 00:25:07 2021
+    Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:26
 
 

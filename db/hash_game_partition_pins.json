@@ -8,6 +8,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "EMPATE",
+					"strict" : false
+				},
+				{
 					"name" : "VEZ_DO_JOGADOR",
 					"strict" : false
 				},
@@ -156,11 +160,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "RESET",
-					"strict" : false
-				},
-				{
-					"name" : "SEL_J2[1]",
+					"name" : "APERTOU_J2",
 					"strict" : false
 				},
 				{
@@ -168,7 +168,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "APERTOU_J2",
+					"name" : "SEL_J2[1]",
 					"strict" : false
 				},
 				{
@@ -180,11 +180,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
 					"name" : "CLK",
 					"strict" : false
 				},
 				{
-					"name" : "SEL_J1[1]",
+					"name" : "APERTOU_J1",
 					"strict" : false
 				},
 				{
@@ -192,7 +196,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "APERTOU_J1",
+					"name" : "SEL_J1[1]",
 					"strict" : false
 				},
 				{

@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/19/2021 00:05:17"
+// Generated on "05/19/2021 00:22:18"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          hash_game
 // 
@@ -47,6 +47,7 @@ wire [6:0] QUADRO5;
 wire [6:0] QUADRO6;
 wire [6:0] QUADRO7;
 wire [6:0] QUADRO8;
+wire [8:0] QUADRO_SEL;
 wire VENCEU;
 wire VEZ_DO_JOGADOR;
 
@@ -66,6 +67,7 @@ hash_game i1 (
 	.QUADRO6(QUADRO6),
 	.QUADRO7(QUADRO7),
 	.QUADRO8(QUADRO8),
+	.QUADRO_SEL(QUADRO_SEL),
 	.RESET(RESET),
 	.SEL_J1(SEL_J1),
 	.SEL_J2(SEL_J2),
@@ -98,6 +100,8 @@ begin
 	APERTOU_J1 = #60000 1'b0;
 	APERTOU_J1 = #50000 1'b1;
 	APERTOU_J1 = #20000 1'b0;
+	APERTOU_J1 = #50000 1'b1;
+	APERTOU_J1 = #20000 1'b0;
 end 
 // SEL_J1[ 3 ]
 initial
@@ -113,12 +117,16 @@ begin
 	SEL_J1[2] = 1'b0;
 	SEL_J1[2] = #110000 1'b1;
 	SEL_J1[2] = #20000 1'b0;
+	SEL_J1[2] = #50000 1'b1;
+	SEL_J1[2] = #20000 1'b0;
 end 
 // SEL_J1[ 1 ]
 initial
 begin
 	SEL_J1[1] = 1'b0;
 	SEL_J1[1] = #110000 1'b1;
+	SEL_J1[1] = #20000 1'b0;
+	SEL_J1[1] = #50000 1'b1;
 	SEL_J1[1] = #20000 1'b0;
 end 
 // SEL_J1[ 0 ]
@@ -138,6 +146,8 @@ begin
 	APERTOU_J2 = #20000 1'b0;
 	APERTOU_J2 = #40000 1'b1;
 	APERTOU_J2 = #20000 1'b0;
+	APERTOU_J2 = #50000 1'b1;
+	APERTOU_J2 = #20000 1'b0;
 end 
 // SEL_J2[ 3 ]
 initial
@@ -154,6 +164,8 @@ initial
 begin
 	SEL_J2[1] = 1'b0;
 	SEL_J2[1] = #20000 1'b1;
+	SEL_J2[1] = #20000 1'b0;
+	SEL_J2[1] = #110000 1'b1;
 	SEL_J2[1] = #20000 1'b0;
 end 
 // SEL_J2[ 0 ]

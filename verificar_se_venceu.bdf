@@ -40,7 +40,7 @@ https://fpgasoftware.intel.com/eula.
 	(input)
 	(rect 960 512 1168 528)
 	(text "INPUT" (rect 165 0 193 10)(font "Arial" (font_size 6)))
-	(text "CAMPO_DISPONIVEL" (rect 5 0 116 12)(font "Arial" ))
+	(text "CAMPO_DISPONIVEL" (rect 5 0 115 12)(font "Arial" ))
 	(pt 208 8)
 	(drawing
 		(line (pt 124 12)(pt 149 12))
@@ -507,21 +507,6 @@ https://fpgasoftware.intel.com/eula.
 		(circle (rect 46 20 54 28))
 	)
 )
-(symbol
-	(rect 1016 488 1048 504)
-	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
-	(text "instVCC2" (rect 3 5 46 22)(font "Intel Clear" )(invisible))
-	(port
-		(pt 16 16)
-		(output)
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(line (pt 16 16)(pt 16 8))
-	)
-	(drawing
-		(line (pt 8 8)(pt 24 8))
-	)
-)
 (connector
 	(pt 944 344)
 	(pt 960 344)
@@ -873,7 +858,15 @@ https://fpgasoftware.intel.com/eula.
 	(pt 1032 504)
 )
 (connector
+	(pt 1032 504)
+	(pt 1032 400)
+)
+(connector
 	(pt 1024 400)
+	(pt 1032 400)
+)
+(connector
+	(pt 1032 400)
 	(pt 1048 400)
 )
 (junction (pt 464 0))
@@ -899,3 +892,4 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt 512 440))
 (junction (pt 560 488))
 (junction (pt 560 544))
+(junction (pt 1032 400))
