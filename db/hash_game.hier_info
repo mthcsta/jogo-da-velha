@@ -1,39 +1,38 @@
 |jogo_da_velha
 VEZ_DO_J1 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
-CLK => insASDt.CLK
 CLK => inst2424.CLK
 CLK => mux18x9_extendido:inst13.CLK
 CLK => memoria:J2_MEMO.CLK
-CLK => controle:inst1.CLK
-CLK => controle:inst.CLK
+CLK => controle:J2_CONTROLE.CLK
+CLK => controle:J1_CONTROLE.CLK
 CLK => selecionado_memoria:inst6.CLK
 CLK => verificar_se_disponivel:inst17.CLK
 CLK => memoria:J1_MEMO.CLK
 CLK => verificar_se_venceu:inst2464.CLK
 RESET => memoria:J2_MEMO.RESET
 RESET => memoria:J1_MEMO.RESET
-J2_ATIVO => controle:inst1.APERTOU
-J2_SEL[0] => controle:inst1.SEL[0]
-J2_SEL[1] => controle:inst1.SEL[1]
-J2_SEL[2] => controle:inst1.SEL[2]
-J2_SEL[3] => controle:inst1.SEL[3]
-J1_ATIVO => controle:inst.APERTOU
-J1_SEL[0] => controle:inst.SEL[0]
-J1_SEL[1] => controle:inst.SEL[1]
-J1_SEL[2] => controle:inst.SEL[2]
-J1_SEL[3] => controle:inst.SEL[3]
+J2_ATIVO => controle:J2_CONTROLE.APERTOU
+J2_SEL[0] => controle:J2_CONTROLE.SEL[0]
+J2_SEL[1] => controle:J2_CONTROLE.SEL[1]
+J2_SEL[2] => controle:J2_CONTROLE.SEL[2]
+J2_SEL[3] => controle:J2_CONTROLE.SEL[3]
+J1_ATIVO => controle:J1_CONTROLE.APERTOU
+J1_SEL[0] => controle:J1_CONTROLE.SEL[0]
+J1_SEL[1] => controle:J1_CONTROLE.SEL[1]
+J1_SEL[2] => controle:J1_CONTROLE.SEL[2]
+J1_SEL[3] => controle:J1_CONTROLE.SEL[3]
 VEZ_DO_J2 <= inst35436.DB_MAX_OUTPUT_PORT_TYPE
-PARTIDA_ATIVA <= insASDt.DB_MAX_OUTPUT_PORT_TYPE
+PARTIDA_ATIVA <= 015158.DB_MAX_OUTPUT_PORT_TYPE
 LOG_selmemCargaS <= selecionado_memoria:inst6.CargaS
-LOG_controle2CargaS <= controle:inst1.CargaS
-LOG_controle1CargaS <= controle:inst.CargaS
+LOG_controle2CargaS <= controle:J2_CONTROLE.CargaS
+LOG_controle1CargaS <= controle:J1_CONTROLE.CargaS
 VENCEU <= verificar_se_venceu:inst2464.VENCEU
 EMPATE <= verificar_se_venceu:inst2464.EMPATE
 LOG_vsvenceuCargaE <= mux18x9_extendido:inst13.CargaS
-LOG_selmem_sel[0] <= selecionado_memoria:inst6.SEL0
-LOG_selmem_sel[1] <= selecionado_memoria:inst6.SEL1
-LOG_selmem_sel[2] <= selecionado_memoria:inst6.SEL2
-LOG_selmem_sel[3] <= selecionado_memoria:inst6.SEL3
+LOG_selmem_sel[0] <= selecionado_memoria:inst6.SEL[0]
+LOG_selmem_sel[1] <= selecionado_memoria:inst6.SEL[1]
+LOG_selmem_sel[2] <= selecionado_memoria:inst6.SEL[2]
+LOG_selmem_sel[3] <= selecionado_memoria:inst6.SEL[3]
 QUADRO0[0] <= visores:VISORES.QUADRO0[0]
 QUADRO0[1] <= visores:VISORES.QUADRO0[1]
 QUADRO0[2] <= visores:VISORES.QUADRO0[2]
@@ -669,31 +668,54 @@ bit8 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 |jogo_da_velha|selecionado_memoria:inst6
 CargaS <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 CLK => inst12.CLK
-CLK => memoria1bit:inst3.CLK
-CLK => memoria1bit:inst2.CLK
-CLK => memoria1bit:inst1.CLK
 CLK => memoria1bit:inst.CLK
+CLK => memoria1bit:inst3.CLK
+CLK => memoria1bit:inst1.CLK
+CLK => memoria1bit:inst2.CLK
 CargaE => inst12.DATAIN
-CargaE => memoria1bit:inst3.LDN
-CargaE => memoria1bit:inst2.LDN
-CargaE => memoria1bit:inst1.LDN
 CargaE => memoria1bit:inst.LDN
-SEL3 <= memoria1bit:inst3.SAIDA
-SEL13 => multiplexador-2-1:inst7.w0
-S => multiplexador-2-1:inst7.S
-S => multiplexador-2-1:inst6.S
-S => multiplexador-2-1:inst5.S
+CargaE => memoria1bit:inst3.LDN
+CargaE => memoria1bit:inst1.LDN
+CargaE => memoria1bit:inst2.LDN
+SEL[0] <= memoria1bit:inst.SAIDA
+SEL[1] <= memoria1bit:inst1.SAIDA
+SEL[2] <= memoria1bit:inst2.SAIDA
+SEL[3] <= memoria1bit:inst3.SAIDA
+J1_SEL[0] => multiplexador-2-1:inst4.w0
+J1_SEL[1] => multiplexador-2-1:inst5.w0
+J1_SEL[2] => multiplexador-2-1:inst6.w0
+J1_SEL[3] => multiplexador-2-1:inst7.w0
 S => multiplexador-2-1:inst4.S
-SEL23 => multiplexador-2-1:inst7.w1
-SEL2 <= memoria1bit:inst2.SAIDA
-SEL12 => multiplexador-2-1:inst6.w0
-SEL22 => multiplexador-2-1:inst6.w1
-SEL1 <= memoria1bit:inst1.SAIDA
-SEL11 => multiplexador-2-1:inst5.w0
-SEL21 => multiplexador-2-1:inst5.w1
-SEL0 <= memoria1bit:inst.SAIDA
-SEL10 => multiplexador-2-1:inst4.w0
-SEL20 => multiplexador-2-1:inst4.w1
+S => multiplexador-2-1:inst7.S
+S => multiplexador-2-1:inst5.S
+S => multiplexador-2-1:inst6.S
+J2_SEL[0] => multiplexador-2-1:inst4.w1
+J2_SEL[1] => multiplexador-2-1:inst5.w1
+J2_SEL[2] => multiplexador-2-1:inst6.w1
+J2_SEL[3] => multiplexador-2-1:inst7.w1
+
+
+|jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst
+SAIDA <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst10.CLK
+LDN => multiplexador-2-1:inst7.S
+BIT => multiplexador-2-1:inst7.w1
+
+
+|jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst|multiplexador-2-1:inst7
+f <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+w1 => inst1.IN1
+w0 => inst.IN0
+
+
+|jogo_da_velha|selecionado_memoria:inst6|multiplexador-2-1:inst4
+f <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+w1 => inst1.IN1
+w0 => inst.IN0
 
 
 |jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst3
@@ -712,29 +734,6 @@ w0 => inst.IN0
 
 
 |jogo_da_velha|selecionado_memoria:inst6|multiplexador-2-1:inst7
-f <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-S => inst1.IN0
-S => inst2.IN0
-w1 => inst1.IN1
-w0 => inst.IN0
-
-
-|jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst2
-SAIDA <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-CLK => inst10.CLK
-LDN => multiplexador-2-1:inst7.S
-BIT => multiplexador-2-1:inst7.w1
-
-
-|jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst2|multiplexador-2-1:inst7
-f <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-S => inst1.IN0
-S => inst2.IN0
-w1 => inst1.IN1
-w0 => inst.IN0
-
-
-|jogo_da_velha|selecionado_memoria:inst6|multiplexador-2-1:inst6
 f <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S => inst1.IN0
 S => inst2.IN0
@@ -765,14 +764,14 @@ w1 => inst1.IN1
 w0 => inst.IN0
 
 
-|jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst
+|jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst2
 SAIDA <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 CLK => inst10.CLK
 LDN => multiplexador-2-1:inst7.S
 BIT => multiplexador-2-1:inst7.w1
 
 
-|jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst|multiplexador-2-1:inst7
+|jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst2|multiplexador-2-1:inst7
 f <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S => inst1.IN0
 S => inst2.IN0
@@ -780,7 +779,7 @@ w1 => inst1.IN1
 w0 => inst.IN0
 
 
-|jogo_da_velha|selecionado_memoria:inst6|multiplexador-2-1:inst4
+|jogo_da_velha|selecionado_memoria:inst6|multiplexador-2-1:inst6
 f <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S => inst1.IN0
 S => inst2.IN0
@@ -788,23 +787,27 @@ w1 => inst1.IN1
 w0 => inst.IN0
 
 
-|jogo_da_velha|controle:inst1
+|jogo_da_velha|controle:J2_CONTROLE
 CargaS <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 CLK => inst6.CLK
+CLK => inst8.CLK
+CLK => inst10.CLK
+CLK => inst12.CLK
+CLK => inst11.CLK
 ATIVO => inst9.IN1
 ATIVO => inst.IN0
 APERTOU => inst.IN1
-SAIDA[0] <= multiplexador-2-1:inst2.f
-SAIDA[1] <= multiplexador-2-1:inst3.f
-SAIDA[2] <= multiplexador-2-1:inst4.f
-SAIDA[3] <= multiplexador-2-1:inst5.f
+SAIDA[0] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+SAIDA[1] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+SAIDA[2] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+SAIDA[3] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 SEL[0] => multiplexador-2-1:inst2.w1
 SEL[1] => multiplexador-2-1:inst3.w1
 SEL[2] => multiplexador-2-1:inst4.w1
 SEL[3] => multiplexador-2-1:inst5.w1
 
 
-|jogo_da_velha|controle:inst1|multiplexador-2-1:inst1
+|jogo_da_velha|controle:J2_CONTROLE|multiplexador-2-1:inst1
 f <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S => inst1.IN0
 S => inst2.IN0
@@ -812,7 +815,7 @@ w1 => inst1.IN1
 w0 => inst.IN0
 
 
-|jogo_da_velha|controle:inst1|multiplexador-2-1:inst5
+|jogo_da_velha|controle:J2_CONTROLE|multiplexador-2-1:inst2
 f <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S => inst1.IN0
 S => inst2.IN0
@@ -820,7 +823,7 @@ w1 => inst1.IN1
 w0 => inst.IN0
 
 
-|jogo_da_velha|controle:inst1|multiplexador-2-1:inst4
+|jogo_da_velha|controle:J2_CONTROLE|multiplexador-2-1:inst3
 f <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S => inst1.IN0
 S => inst2.IN0
@@ -828,7 +831,7 @@ w1 => inst1.IN1
 w0 => inst.IN0
 
 
-|jogo_da_velha|controle:inst1|multiplexador-2-1:inst3
+|jogo_da_velha|controle:J2_CONTROLE|multiplexador-2-1:inst5
 f <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S => inst1.IN0
 S => inst2.IN0
@@ -836,7 +839,7 @@ w1 => inst1.IN1
 w0 => inst.IN0
 
 
-|jogo_da_velha|controle:inst1|multiplexador-2-1:inst2
+|jogo_da_velha|controle:J2_CONTROLE|multiplexador-2-1:inst4
 f <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S => inst1.IN0
 S => inst2.IN0
@@ -844,23 +847,27 @@ w1 => inst1.IN1
 w0 => inst.IN0
 
 
-|jogo_da_velha|controle:inst
+|jogo_da_velha|controle:J1_CONTROLE
 CargaS <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 CLK => inst6.CLK
+CLK => inst8.CLK
+CLK => inst10.CLK
+CLK => inst12.CLK
+CLK => inst11.CLK
 ATIVO => inst9.IN1
 ATIVO => inst.IN0
 APERTOU => inst.IN1
-SAIDA[0] <= multiplexador-2-1:inst2.f
-SAIDA[1] <= multiplexador-2-1:inst3.f
-SAIDA[2] <= multiplexador-2-1:inst4.f
-SAIDA[3] <= multiplexador-2-1:inst5.f
+SAIDA[0] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+SAIDA[1] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+SAIDA[2] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+SAIDA[3] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 SEL[0] => multiplexador-2-1:inst2.w1
 SEL[1] => multiplexador-2-1:inst3.w1
 SEL[2] => multiplexador-2-1:inst4.w1
 SEL[3] => multiplexador-2-1:inst5.w1
 
 
-|jogo_da_velha|controle:inst|multiplexador-2-1:inst1
+|jogo_da_velha|controle:J1_CONTROLE|multiplexador-2-1:inst1
 f <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S => inst1.IN0
 S => inst2.IN0
@@ -868,7 +875,7 @@ w1 => inst1.IN1
 w0 => inst.IN0
 
 
-|jogo_da_velha|controle:inst|multiplexador-2-1:inst5
+|jogo_da_velha|controle:J1_CONTROLE|multiplexador-2-1:inst2
 f <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S => inst1.IN0
 S => inst2.IN0
@@ -876,7 +883,7 @@ w1 => inst1.IN1
 w0 => inst.IN0
 
 
-|jogo_da_velha|controle:inst|multiplexador-2-1:inst4
+|jogo_da_velha|controle:J1_CONTROLE|multiplexador-2-1:inst3
 f <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S => inst1.IN0
 S => inst2.IN0
@@ -884,7 +891,7 @@ w1 => inst1.IN1
 w0 => inst.IN0
 
 
-|jogo_da_velha|controle:inst|multiplexador-2-1:inst3
+|jogo_da_velha|controle:J1_CONTROLE|multiplexador-2-1:inst5
 f <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S => inst1.IN0
 S => inst2.IN0
@@ -892,7 +899,7 @@ w1 => inst1.IN1
 w0 => inst.IN0
 
 
-|jogo_da_velha|controle:inst|multiplexador-2-1:inst2
+|jogo_da_velha|controle:J1_CONTROLE|multiplexador-2-1:inst4
 f <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S => inst1.IN0
 S => inst2.IN0

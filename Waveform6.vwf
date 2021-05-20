@@ -20,6 +20,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -38,6 +39,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
 </simulation_settings>*/
@@ -936,11 +938,6 @@ SIGNAL("RESET")
 	PARENT = "";
 }
 
-GROUP("PARTIDA")
-{
-	MEMBERS = "QUADRO0", "QUADRO1", "QUADRO2", "QUADRO3", "QUADRO4", "QUADRO5", "QUADRO6", "QUADRO7", "QUADRO8";
-}
-
 SIGNAL("VEZ_DO_J1")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -1081,6 +1078,11 @@ SIGNAL("LOG_vsvenceuCargaE")
 	PARENT = "";
 }
 
+GROUP("PARTIDA")
+{
+	MEMBERS = "QUADRO0", "QUADRO1", "QUADRO2", "QUADRO3", "QUADRO4", "QUADRO5", "QUADRO6", "QUADRO7", "QUADRO8";
+}
+
 TRANSITION_LIST("CLK")
 {
 	NODE
@@ -1100,9 +1102,11 @@ TRANSITION_LIST("J1_ATIVO")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 80.0;
+		LEVEL 0 FOR 210.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 900.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 490.0;
 	}
 }
 
@@ -1111,9 +1115,9 @@ TRANSITION_LIST("J1_SEL[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 80.0;
+		LEVEL 0 FOR 210.0;
 		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 900.0;
+		LEVEL 0 FOR 770.0;
 	}
 }
 
@@ -1131,7 +1135,9 @@ TRANSITION_LIST("J1_SEL[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 480.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 490.0;
 	}
 }
 
@@ -1140,9 +1146,7 @@ TRANSITION_LIST("J1_SEL[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 900.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1152,8 +1156,12 @@ TRANSITION_LIST("J2_ATIVO")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 890.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 260.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 220.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 350.0;
 	}
 }
 
@@ -1173,7 +1181,9 @@ TRANSITION_LIST("J2_SEL[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 360.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 620.0;
 	}
 }
 
@@ -1193,7 +1203,11 @@ TRANSITION_LIST("J2_SEL[0]")
 		REPEAT = 1;
 		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 870.0;
+		LEVEL 0 FOR 230.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 220.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 350.0;
 	}
 }
 

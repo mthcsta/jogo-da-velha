@@ -176,11 +176,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "J1_SEL[3]",
+					"name" : "RESET",
 					"strict" : false
 				},
 				{
 					"name" : "J2_SEL[3]",
+					"strict" : false
+				},
+				{
+					"name" : "J1_SEL[3]",
 					"strict" : false
 				},
 				{
@@ -205,10 +209,6 @@
 				},
 				{
 					"name" : "J1_SEL[0]",
-					"strict" : false
-				},
-				{
-					"name" : "RESET",
 					"strict" : false
 				}
 			]

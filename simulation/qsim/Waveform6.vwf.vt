@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/20/2021 18:08:10"
+// Generated on "05/20/2021 18:50:00"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          jogo_da_velha
 // 
@@ -110,14 +110,16 @@ end
 initial
 begin
 	J1_ATIVO = 1'b0;
-	J1_ATIVO = #80000 1'b1;
+	J1_ATIVO = #210000 1'b1;
 	J1_ATIVO = #20000 1'b0;
+	J1_ATIVO = #250000 1'b1;
+	J1_ATIVO = #30000 1'b0;
 end 
 // J1_SEL[ 3 ]
 initial
 begin
 	J1_SEL[3] = 1'b0;
-	J1_SEL[3] = #80000 1'b1;
+	J1_SEL[3] = #210000 1'b1;
 	J1_SEL[3] = #20000 1'b0;
 end 
 // J1_SEL[ 2 ]
@@ -129,13 +131,13 @@ end
 initial
 begin
 	J1_SEL[1] = 1'b0;
+	J1_SEL[1] = #480000 1'b1;
+	J1_SEL[1] = #30000 1'b0;
 end 
 // J1_SEL[ 0 ]
 initial
 begin
 	J1_SEL[0] = 1'b0;
-	J1_SEL[0] = #80000 1'b1;
-	J1_SEL[0] = #20000 1'b0;
 end 
 
 // J2_ATIVO
@@ -143,7 +145,11 @@ initial
 begin
 	J2_ATIVO = 1'b0;
 	J2_ATIVO = #80000 1'b1;
-	J2_ATIVO = #30000 1'b0;
+	J2_ATIVO = #20000 1'b0;
+	J2_ATIVO = #260000 1'b1;
+	J2_ATIVO = #20000 1'b0;
+	J2_ATIVO = #220000 1'b1;
+	J2_ATIVO = #50000 1'b0;
 end 
 // J2_SEL[ 3 ]
 initial
@@ -156,6 +162,8 @@ end
 initial
 begin
 	J2_SEL[2] = 1'b0;
+	J2_SEL[2] = #360000 1'b1;
+	J2_SEL[2] = #20000 1'b0;
 end 
 // J2_SEL[ 1 ]
 initial
@@ -167,6 +175,10 @@ initial
 begin
 	J2_SEL[0] = 1'b0;
 	J2_SEL[0] = #80000 1'b1;
+	J2_SEL[0] = #50000 1'b0;
+	J2_SEL[0] = #230000 1'b1;
+	J2_SEL[0] = #20000 1'b0;
+	J2_SEL[0] = #220000 1'b1;
 	J2_SEL[0] = #50000 1'b0;
 end 
 endmodule

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for hash_game
-Thu May 20 17:46:08 2021
+Thu May 20 20:02:28 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -44,15 +44,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu May 20 17:46:08 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu May 20 20:02:28 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; hash_game                                   ;
 ; Top-level Entity Name              ; jogo_da_velha                               ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 94                                          ;
-;     Total combinational functions  ; 93                                          ;
-;     Dedicated logic registers      ; 35                                          ;
-; Total registers                    ; 35                                          ;
+; Total logic elements               ; 101                                         ;
+;     Total combinational functions  ; 92                                          ;
+;     Dedicated logic registers      ; 42                                          ;
+; Total registers                    ; 42                                          ;
 ; Total pins                         ; 88                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -154,12 +154,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.2%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -190,20 +190,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 94        ;
+; Estimated Total logic elements              ; 101       ;
 ;                                             ;           ;
-; Total combinational functions               ; 93        ;
+; Total combinational functions               ; 92        ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 58        ;
-;     -- 3 input functions                    ; 16        ;
-;     -- <=2 input functions                  ; 19        ;
+;     -- 4 input functions                    ; 51        ;
+;     -- 3 input functions                    ; 27        ;
+;     -- <=2 input functions                  ; 14        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 93        ;
+;     -- normal mode                          ; 92        ;
 ;     -- arithmetic mode                      ; 0         ;
 ;                                             ;           ;
-; Total registers                             ; 35        ;
-;     -- Dedicated logic registers            ; 35        ;
+; Total registers                             ; 42        ;
+;     -- Dedicated logic registers            ; 42        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 88        ;
@@ -211,9 +211,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 35        ;
-; Total fan-out                               ; 522       ;
-; Average fan-out                             ; 1.72      ;
+; Maximum fan-out                             ; 42        ;
+; Total fan-out                               ; 539       ;
+; Average fan-out                             ; 1.74      ;
 +---------------------------------------------+-----------+
 
 
@@ -222,11 +222,11 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node          ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                        ; Entity Name             ; Library Name ;
 +-------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+-------------------------+--------------+
-; |jogo_da_velha                      ; 93 (5)              ; 35 (2)                    ; 0           ; 0            ; 0       ; 0         ; 88   ; 0            ; |jogo_da_velha                                                                             ; jogo_da_velha           ; work         ;
-;    |controle:inst1|                 ; 1 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|controle:inst1                                                              ; controle                ; work         ;
-;       |multiplexador-2-1:inst1|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|controle:inst1|multiplexador-2-1:inst1                                      ; multiplexador-2-1       ; work         ;
-;    |controle:inst|                  ; 1 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|controle:inst                                                               ; controle                ; work         ;
-;       |multiplexador-2-1:inst1|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|controle:inst|multiplexador-2-1:inst1                                       ; multiplexador-2-1       ; work         ;
+; |jogo_da_velha                      ; 92 (5)              ; 42 (1)                    ; 0           ; 0            ; 0       ; 0         ; 88   ; 0            ; |jogo_da_velha                                                                             ; jogo_da_velha           ; work         ;
+;    |controle:J1_CONTROLE|           ; 2 (1)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|controle:J1_CONTROLE                                                        ; controle                ; work         ;
+;       |multiplexador-2-1:inst1|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|controle:J1_CONTROLE|multiplexador-2-1:inst1                                ; multiplexador-2-1       ; work         ;
+;    |controle:J2_CONTROLE|           ; 2 (1)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|controle:J2_CONTROLE                                                        ; controle                ; work         ;
+;       |multiplexador-2-1:inst1|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|controle:J2_CONTROLE|multiplexador-2-1:inst1                                ; multiplexador-2-1       ; work         ;
 ;    |memoria:J1_MEMO|                ; 20 (1)              ; 10 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|memoria:J1_MEMO                                                             ; memoria                 ; work         ;
 ;       |memoria1bit:inst10|          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|memoria:J1_MEMO|memoria1bit:inst10                                          ; memoria1bit             ; work         ;
 ;       |memoria1bit:inst2|           ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|memoria:J1_MEMO|memoria1bit:inst2                                           ; memoria1bit             ; work         ;
@@ -253,16 +253,16 @@ https://fpgasoftware.intel.com/eula.
 ;          |multiplexador-2-1:inst6|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|mux18x9_extendido:inst13|multiplexador_18x9:inst99|multiplexador-2-1:inst6  ; multiplexador-2-1       ; work         ;
 ;          |multiplexador-2-1:inst74| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|mux18x9_extendido:inst13|multiplexador_18x9:inst99|multiplexador-2-1:inst74 ; multiplexador-2-1       ; work         ;
 ;          |multiplexador-2-1:inst|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|mux18x9_extendido:inst13|multiplexador_18x9:inst99|multiplexador-2-1:inst   ; multiplexador-2-1       ; work         ;
-;    |selecionado_memoria:inst6|      ; 6 (0)               ; 5 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|selecionado_memoria:inst6                                                   ; selecionado_memoria     ; work         ;
+;    |selecionado_memoria:inst6|      ; 4 (0)               ; 5 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|selecionado_memoria:inst6                                                   ; selecionado_memoria     ; work         ;
 ;       |memoria1bit:inst1|           ; 1 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst1                                 ; memoria1bit             ; work         ;
 ;          |multiplexador-2-1:inst7|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst1|multiplexador-2-1:inst7         ; multiplexador-2-1       ; work         ;
 ;       |memoria1bit:inst2|           ; 1 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst2                                 ; memoria1bit             ; work         ;
 ;          |multiplexador-2-1:inst7|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst2|multiplexador-2-1:inst7         ; multiplexador-2-1       ; work         ;
 ;       |memoria1bit:inst3|           ; 1 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst3                                 ; memoria1bit             ; work         ;
 ;          |multiplexador-2-1:inst7|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst3|multiplexador-2-1:inst7         ; multiplexador-2-1       ; work         ;
-;       |memoria1bit:inst|            ; 3 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst                                  ; memoria1bit             ; work         ;
-;          |multiplexador-2-1:inst7|  ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst|multiplexador-2-1:inst7          ; multiplexador-2-1       ; work         ;
-;    |verificar_se_disponivel:inst17| ; 13 (13)             ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|verificar_se_disponivel:inst17                                              ; verificar_se_disponivel ; work         ;
+;       |memoria1bit:inst|            ; 1 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst                                  ; memoria1bit             ; work         ;
+;          |multiplexador-2-1:inst7|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|selecionado_memoria:inst6|memoria1bit:inst|multiplexador-2-1:inst7          ; multiplexador-2-1       ; work         ;
+;    |verificar_se_disponivel:inst17| ; 12 (12)             ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|verificar_se_disponivel:inst17                                              ; verificar_se_disponivel ; work         ;
 ;    |verificar_se_venceu:inst2464|   ; 16 (16)             ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|verificar_se_venceu:inst2464                                                ; verificar_se_venceu     ; work         ;
 ;    |visores:VISORES|                ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|visores:VISORES                                                             ; visores                 ; work         ;
 ;       |visor:VISOR0|                ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |jogo_da_velha|visores:VISORES|visor:VISOR0                                                ; visor                   ; work         ;
@@ -292,12 +292,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 35    ;
+; Total registers                              ; 42    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 6     ;
+; Number of registers using Clock Enable       ; 14    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -317,19 +317,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 88                          ;
-; cycloneiii_ff         ; 35                          ;
-;     ENA               ; 6                           ;
-;     plain             ; 29                          ;
-; cycloneiii_lcell_comb ; 104                         ;
-;     normal            ; 104                         ;
+; cycloneiii_ff         ; 42                          ;
+;     ENA               ; 14                          ;
+;     plain             ; 28                          ;
+; cycloneiii_lcell_comb ; 105                         ;
+;     normal            ; 105                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 10                          ;
-;         2 data inputs ; 19                          ;
-;         3 data inputs ; 16                          ;
-;         4 data inputs ; 58                          ;
+;         1 data inputs ; 12                          ;
+;         2 data inputs ; 14                          ;
+;         3 data inputs ; 27                          ;
+;         4 data inputs ; 51                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 2.52                        ;
+; Average LUT depth     ; 2.42                        ;
 +-----------------------+-----------------------------+
 
 
@@ -338,7 +338,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -348,7 +348,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu May 20 17:45:43 2021
+    Info: Processing started: Thu May 20 20:02:17 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off hash_game -c hash_game
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -391,14 +391,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file selecio
 Info (12021): Found 1 design units, including 1 entities, in source file jogo_da_velha.bdf
     Info (12023): Found entity 1: jogo_da_velha
 Info (12127): Elaborating entity "jogo_da_velha" for the top level hierarchy
-Warning (275080): Converted elements in bus name "SEL" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "SEL[3..0]" to "SEL3..0"
-Warning (275080): Converted elements in bus name "SEL1" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "SEL1[3..0]" to "SEL13..0"
-Warning (275080): Converted elements in bus name "SEL2" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "SEL2[3..0]" to "SEL23..0"
-Warning (275011): Block or symbol "AND2" of instance "inst35436" overlaps another block or symbol
-Warning (275011): Block or symbol "VCC" of instance "inst23345" overlaps another block or symbol
 Info (12128): Elaborating entity "verificar_se_venceu" for hierarchy "verificar_se_venceu:inst2464"
 Warning (12125): Using design file multiplexador-2-1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: multiplexador-2-1
@@ -410,21 +402,7 @@ Info (12128): Elaborating entity "memoria1bit" for hierarchy "memoria:J2_MEMO|me
 Info (12128): Elaborating entity "seletor" for hierarchy "memoria:J2_MEMO|seletor:inst"
 Info (12128): Elaborating entity "verificar_se_disponivel" for hierarchy "verificar_se_disponivel:inst17"
 Info (12128): Elaborating entity "selecionado_memoria" for hierarchy "selecionado_memoria:inst6"
-Warning (275083): Bus "SEL1[0]" found using same base name as "SEL1", which might lead to a name conflict.
-Warning (275083): Bus "SEL2[0]" found using same base name as "SEL2", which might lead to a name conflict.
-Warning (275083): Bus "SEL1[1]" found using same base name as "SEL1", which might lead to a name conflict.
-Warning (275083): Bus "SEL2[1]" found using same base name as "SEL2", which might lead to a name conflict.
-Warning (275083): Bus "SEL1[2]" found using same base name as "SEL1", which might lead to a name conflict.
-Warning (275083): Bus "SEL2[2]" found using same base name as "SEL2", which might lead to a name conflict.
-Warning (275083): Bus "SEL1[3]" found using same base name as "SEL1", which might lead to a name conflict.
-Warning (275083): Bus "SEL2[3]" found using same base name as "SEL2", which might lead to a name conflict.
-Warning (275080): Converted elements in bus name "SEL" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "SEL[3..0]" to "SEL3..0"
-Warning (275080): Converted elements in bus name "SEL1" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "SEL1[3..0]" to "SEL13..0"
-Warning (275080): Converted elements in bus name "SEL2" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "SEL2[3..0]" to "SEL23..0"
-Info (12128): Elaborating entity "controle" for hierarchy "controle:inst1"
+Info (12128): Elaborating entity "controle" for hierarchy "controle:J2_CONTROLE"
 Info (12128): Elaborating entity "visores" for hierarchy "visores:VISORES"
 Info (12128): Elaborating entity "visor" for hierarchy "visores:VISORES|visor:VISOR0"
 Warning (12125): Using design file decod7segment.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
@@ -470,14 +448,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 183 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 190 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 76 output pins
-    Info (21061): Implemented 95 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 62 warnings
-    Info: Peak virtual memory: 623 megabytes
-    Info: Processing ended: Thu May 20 17:46:08 2021
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:30
+    Info (21061): Implemented 102 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
+    Info: Peak virtual memory: 621 megabytes
+    Info: Processing ended: Thu May 20 20:02:28 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:27
 
 
