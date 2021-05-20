@@ -21,9 +21,9 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 296 112)
+	(rect 16 16 296 144)
 	(text "mux18x9_extendido" (rect 5 0 126 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 75 24 92)(font "Intel Clear" ))
+	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -46,6 +46,20 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
+		(pt 0 80)
+		(input)
+		(text "CLK" (rect 0 0 23 19)(font "Intel Clear" (font_size 8)))
+		(text "CLK" (rect 21 75 44 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "CargaE" (rect 0 0 41 19)(font "Intel Clear" (font_size 8)))
+		(text "CargaE" (rect 21 91 62 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
 		(pt 280 32)
 		(output)
 		(text "QUADRO[8..0]" (rect 0 0 84 19)(font "Intel Clear" (font_size 8)))
@@ -59,7 +73,14 @@ https://fpgasoftware.intel.com/eula.
 		(text "CAMPO_DISPONIVEL" (rect 133 43 259 62)(font "Intel Clear" (font_size 8)))
 		(line (pt 280 48)(pt 264 48))
 	)
+	(port
+		(pt 280 64)
+		(output)
+		(text "CargaS" (rect 0 0 42 19)(font "Intel Clear" (font_size 8)))
+		(text "CargaS" (rect 217 59 259 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 280 64)(pt 264 64))
+	)
 	(drawing
-		(rectangle (rect 16 16 264 80))
+		(rectangle (rect 16 16 264 112))
 	)
 )

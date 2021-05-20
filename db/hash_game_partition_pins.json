@@ -4,6 +4,30 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "VEZ_DO_J1",
+					"strict" : false
+				},
+				{
+					"name" : "VEZ_DO_J2",
+					"strict" : false
+				},
+				{
+					"name" : "PARTIDA_ATIVA",
+					"strict" : false
+				},
+				{
+					"name" : "LOG_selmemCargaS",
+					"strict" : false
+				},
+				{
+					"name" : "LOG_controle2CargaS",
+					"strict" : false
+				},
+				{
+					"name" : "LOG_controle1CargaS",
+					"strict" : false
+				},
+				{
 					"name" : "VENCEU",
 					"strict" : false
 				},
@@ -12,7 +36,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "VEZ_DO_JOGADOR",
+					"name" : "LOG_vsvenceuCargaE",
+					"strict" : false
+				},
+				{
+					"name" : "LOG_selmem_sel[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LOG_selmem_sel[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LOG_selmem_sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LOG_selmem_sel[0]",
 					"strict" : false
 				},
 				{
@@ -124,87 +164,51 @@
 					"strict" : false
 				},
 				{
-					"name" : "QUADRO_SEL[8]",
-					"strict" : false
-				},
-				{
-					"name" : "QUADRO_SEL[7]",
-					"strict" : false
-				},
-				{
-					"name" : "QUADRO_SEL[6]",
-					"strict" : false
-				},
-				{
-					"name" : "QUADRO_SEL[5]",
-					"strict" : false
-				},
-				{
-					"name" : "QUADRO_SEL[4]",
-					"strict" : false
-				},
-				{
-					"name" : "QUADRO_SEL[3]",
-					"strict" : false
-				},
-				{
-					"name" : "QUADRO_SEL[2]",
-					"strict" : false
-				},
-				{
-					"name" : "QUADRO_SEL[1]",
-					"strict" : false
-				},
-				{
-					"name" : "QUADRO_SEL[0]",
-					"strict" : false
-				},
-				{
-					"name" : "APERTOU_J2",
-					"strict" : false
-				},
-				{
-					"name" : "SEL_J2[2]",
-					"strict" : false
-				},
-				{
-					"name" : "SEL_J2[1]",
-					"strict" : false
-				},
-				{
-					"name" : "SEL_J2[0]",
-					"strict" : false
-				},
-				{
-					"name" : "SEL_J2[3]",
-					"strict" : false
-				},
-				{
-					"name" : "RESET",
-					"strict" : false
-				},
-				{
 					"name" : "CLK",
 					"strict" : false
 				},
 				{
-					"name" : "APERTOU_J1",
+					"name" : "J2_ATIVO",
 					"strict" : false
 				},
 				{
-					"name" : "SEL_J1[2]",
+					"name" : "J1_ATIVO",
 					"strict" : false
 				},
 				{
-					"name" : "SEL_J1[1]",
+					"name" : "J1_SEL[3]",
 					"strict" : false
 				},
 				{
-					"name" : "SEL_J1[0]",
+					"name" : "J2_SEL[3]",
 					"strict" : false
 				},
 				{
-					"name" : "SEL_J1[3]",
+					"name" : "J2_SEL[2]",
+					"strict" : false
+				},
+				{
+					"name" : "J1_SEL[2]",
+					"strict" : false
+				},
+				{
+					"name" : "J2_SEL[1]",
+					"strict" : false
+				},
+				{
+					"name" : "J1_SEL[1]",
+					"strict" : false
+				},
+				{
+					"name" : "J2_SEL[0]",
+					"strict" : false
+				},
+				{
+					"name" : "J1_SEL[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
 					"strict" : false
 				}
 			]

@@ -21,9 +21,9 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 200 112)
+	(rect 16 16 200 144)
 	(text "controle" (rect 5 0 52 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 75 24 92)(font "Intel Clear" ))
+	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -46,6 +46,13 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
+		(pt 0 80)
+		(input)
+		(text "CLK" (rect 0 0 23 19)(font "Intel Clear" (font_size 8)))
+		(text "CLK" (rect 21 75 44 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
 		(pt 184 32)
 		(output)
 		(text "SAIDA[3..0]" (rect 0 0 68 19)(font "Intel Clear" (font_size 8)))
@@ -55,11 +62,11 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 184 48)
 		(output)
-		(text "MUDOU" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
-		(text "MUDOU" (rect 115 43 163 62)(font "Intel Clear" (font_size 8)))
+		(text "CargaS" (rect 0 0 42 19)(font "Intel Clear" (font_size 8)))
+		(text "CargaS" (rect 121 43 163 62)(font "Intel Clear" (font_size 8)))
 		(line (pt 184 48)(pt 168 48))
 	)
 	(drawing
-		(rectangle (rect 16 16 168 80))
+		(rectangle (rect 16 16 168 112))
 	)
 )

@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY hash_game
+set_global_assignment -name TOP_LEVEL_ENTITY jogo_da_velha
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "01:02:14  MAY 08, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -59,11 +59,16 @@ set_global_assignment -name BDF_FILE prototipo_memoria.bdf
 set_global_assignment -name BDF_FILE memoria1bit.bdf
 set_global_assignment -name BDF_FILE seletor.bdf
 set_global_assignment -name BDF_FILE memoria.bdf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
 set_global_assignment -name BDF_FILE verificar_se_venceu.bdf
 set_global_assignment -name BDF_FILE multiplexador_18x9.bdf
 set_global_assignment -name BDF_FILE mux18x9_extendido.bdf
+set_global_assignment -name BDF_FILE verificar_se_disponivel.bdf
+set_global_assignment -name BDF_FILE mux8x4.bdf
+set_global_assignment -name BDF_FILE selecionado_memoria.bdf
+set_global_assignment -name BDF_FILE jogo_da_velha.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

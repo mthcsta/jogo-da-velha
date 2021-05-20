@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/19/2021 00:22:18"
+// Generated on "05/20/2021 14:32:24"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          hash_game
 // 
@@ -37,7 +37,12 @@ reg RESET;
 reg [3:0] SEL_J1;
 reg [3:0] SEL_J2;
 // wires                                               
+wire ATIVO1_S;
+wire ATIVO2_S;
+wire CONTROLE_CARGAS;
 wire EMPATE;
+wire MUDOU_VERIFICAR;
+wire PARTIDA_ATIVA;
 wire [6:0] QUADRO0;
 wire [6:0] QUADRO1;
 wire [6:0] QUADRO2;
@@ -48,16 +53,24 @@ wire [6:0] QUADRO6;
 wire [6:0] QUADRO7;
 wire [6:0] QUADRO8;
 wire [8:0] QUADRO_SEL;
+wire SEL_DISPONIVEL;
+wire [3:0] SEL_S;
 wire VENCEU;
-wire VEZ_DO_JOGADOR;
+wire VEZ_DO_JOGADOR1;
+wire VEZ_DO_JOGADOR2;
 
 // assign statements (if any)                          
 hash_game i1 (
 // port map - connection between master ports and signals/registers   
 	.APERTOU_J1(APERTOU_J1),
 	.APERTOU_J2(APERTOU_J2),
+	.ATIVO1_S(ATIVO1_S),
+	.ATIVO2_S(ATIVO2_S),
 	.CLK(CLK),
+	.CONTROLE_CARGAS(CONTROLE_CARGAS),
 	.EMPATE(EMPATE),
+	.MUDOU_VERIFICAR(MUDOU_VERIFICAR),
+	.PARTIDA_ATIVA(PARTIDA_ATIVA),
 	.QUADRO0(QUADRO0),
 	.QUADRO1(QUADRO1),
 	.QUADRO2(QUADRO2),
@@ -69,10 +82,13 @@ hash_game i1 (
 	.QUADRO8(QUADRO8),
 	.QUADRO_SEL(QUADRO_SEL),
 	.RESET(RESET),
+	.SEL_DISPONIVEL(SEL_DISPONIVEL),
 	.SEL_J1(SEL_J1),
 	.SEL_J2(SEL_J2),
+	.SEL_S(SEL_S),
 	.VENCEU(VENCEU),
-	.VEZ_DO_JOGADOR(VEZ_DO_JOGADOR)
+	.VEZ_DO_JOGADOR1(VEZ_DO_JOGADOR1),
+	.VEZ_DO_JOGADOR2(VEZ_DO_JOGADOR2)
 );
 initial 
 begin 
@@ -91,6 +107,8 @@ end
 initial
 begin
 	RESET = 1'b0;
+	RESET = #220000 1'b1;
+	RESET = #20000 1'b0;
 end 
 
 // APERTOU_J1
@@ -102,6 +120,10 @@ begin
 	APERTOU_J1 = #20000 1'b0;
 	APERTOU_J1 = #50000 1'b1;
 	APERTOU_J1 = #20000 1'b0;
+	APERTOU_J1 = #170000 1'b1;
+	APERTOU_J1 = #20000 1'b0;
+	APERTOU_J1 = #60000 1'b1;
+	APERTOU_J1 = #20000 1'b0;
 end 
 // SEL_J1[ 3 ]
 initial
@@ -109,6 +131,10 @@ begin
 	SEL_J1[3] = 1'b1;
 	SEL_J1[3] = #20000 1'b0;
 	SEL_J1[3] = #20000 1'b1;
+	SEL_J1[3] = #20000 1'b0;
+	SEL_J1[3] = #310000 1'b1;
+	SEL_J1[3] = #20000 1'b0;
+	SEL_J1[3] = #60000 1'b1;
 	SEL_J1[3] = #20000 1'b0;
 end 
 // SEL_J1[ 2 ]
@@ -119,6 +145,8 @@ begin
 	SEL_J1[2] = #20000 1'b0;
 	SEL_J1[2] = #50000 1'b1;
 	SEL_J1[2] = #20000 1'b0;
+	SEL_J1[2] = #90000 1'b1;
+	SEL_J1[2] = #20000 1'b0;
 end 
 // SEL_J1[ 1 ]
 initial
@@ -128,6 +156,8 @@ begin
 	SEL_J1[1] = #20000 1'b0;
 	SEL_J1[1] = #50000 1'b1;
 	SEL_J1[1] = #20000 1'b0;
+	SEL_J1[1] = #90000 1'b1;
+	SEL_J1[1] = #20000 1'b0;
 end 
 // SEL_J1[ 0 ]
 initial
@@ -135,6 +165,10 @@ begin
 	SEL_J1[0] = 1'b1;
 	SEL_J1[0] = #20000 1'b0;
 	SEL_J1[0] = #90000 1'b1;
+	SEL_J1[0] = #20000 1'b0;
+	SEL_J1[0] = #160000 1'b1;
+	SEL_J1[0] = #20000 1'b0;
+	SEL_J1[0] = #60000 1'b1;
 	SEL_J1[0] = #20000 1'b0;
 end 
 
@@ -148,6 +182,10 @@ begin
 	APERTOU_J2 = #20000 1'b0;
 	APERTOU_J2 = #50000 1'b1;
 	APERTOU_J2 = #20000 1'b0;
+	APERTOU_J2 = #160000 1'b1;
+	APERTOU_J2 = #20000 1'b0;
+	APERTOU_J2 = #60000 1'b1;
+	APERTOU_J2 = #20000 1'b0;
 end 
 // SEL_J2[ 3 ]
 initial
@@ -158,6 +196,8 @@ end
 initial
 begin
 	SEL_J2[2] = 1'b0;
+	SEL_J2[2] = #410000 1'b1;
+	SEL_J2[2] = #20000 1'b0;
 end 
 // SEL_J2[ 1 ]
 initial
@@ -166,6 +206,8 @@ begin
 	SEL_J2[1] = #20000 1'b1;
 	SEL_J2[1] = #20000 1'b0;
 	SEL_J2[1] = #110000 1'b1;
+	SEL_J2[1] = #20000 1'b0;
+	SEL_J2[1] = #160000 1'b1;
 	SEL_J2[1] = #20000 1'b0;
 end 
 // SEL_J2[ 0 ]

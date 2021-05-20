@@ -41,8 +41,8 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 64)
 		(input)
-		(text "Carga" (rect 0 0 34 19)(font "Intel Clear" (font_size 8)))
-		(text "Carga" (rect 21 59 55 78)(font "Intel Clear" (font_size 8)))
+		(text "CargaE" (rect 0 0 41 19)(font "Intel Clear" (font_size 8)))
+		(text "CargaE" (rect 21 59 62 78)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
@@ -58,6 +58,13 @@ https://fpgasoftware.intel.com/eula.
 		(text "SAIDA[8..0]" (rect 0 0 68 19)(font "Intel Clear" (font_size 8)))
 		(text "SAIDA[8..0]" (rect 87 27 155 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 176 32)(pt 160 32)(line_width 3))
+	)
+	(port
+		(pt 176 48)
+		(output)
+		(text "cargaS" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "cargaS" (rect 115 43 155 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 176 48)(pt 160 48))
 	)
 	(drawing
 		(rectangle (rect 16 16 160 112))
