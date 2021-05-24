@@ -15,7 +15,8 @@ Para a seleção de cada jogador foi utilizado o Interruptor Dip Rotativo (em in
 
 <div align="center">
     <img src="https://github.com/mthcsta/jogo-da-velha/blob/master/readme_content/rotary-dip.png" align="center" />   
-    Rotary Dip Switch A6R-101RS (<a href="https://omronfs.omron.com/en_US/ecb/products/pdf/en-a6r_rv.pdf">datasheet</a>) 
+      
+      Rotary Dip Switch A6R-101RS (<a href="https://omronfs.omron.com/en_US/ecb/products/pdf/en-a6r_rv.pdf">datasheet</a>) 
 </div>  
   
   
@@ -77,7 +78,7 @@ A marcação feita pelo jogador passa por um MUX que de acordo com de quem é a 
 
 <div align="center">
     <img src="https://github.com/mthcsta/jogo-da-velha/blob/master/readme_content/marcacao-do-jogador-interno.png" align="center" />    
-    Por dentro da marcação do jogador
+    Por dentro da marcação do jogador  
 </div>  
 
 Podemos ver que também é feita uma memorização da seleção do último jogador, sendo enviado o sinal de carga quando uma carga de entrada é recebida.
