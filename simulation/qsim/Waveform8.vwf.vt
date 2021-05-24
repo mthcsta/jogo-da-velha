@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/24/2021 11:31:44"
+// Generated on "05/24/2021 11:36:34"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          jogo_da_velha
 // 
@@ -88,7 +88,7 @@ jogo_da_velha i1 (
 );
 initial 
 begin 
-#1000000 $stop;
+#1000000 $finish;
 end 
 
 // CLK
@@ -102,15 +102,22 @@ end
 // RESET
 initial
 begin
-	RESET = 1'b1;
-	RESET = #20000 1'b0;
+	RESET = 1'b0;
+	RESET = #70000 1'b1;
+	RESET = #100000 1'b0;
+end 
+
+// J1_APERTOU
+initial
+begin
+	J1_APERTOU = 1'b0;
+	J1_APERTOU = #490000 1'b1;
+	J1_APERTOU = #160000 1'b0;
 end 
 // J1_SEL[ 3 ]
 initial
 begin
-	J1_SEL[3] = 1'b0;
-	J1_SEL[3] = #210000 1'b1;
-	J1_SEL[3] = #20000 1'b0;
+	J1_SEL[3] = 1'b1;
 end 
 // J1_SEL[ 2 ]
 initial
@@ -121,27 +128,33 @@ end
 initial
 begin
 	J1_SEL[1] = 1'b0;
-	J1_SEL[1] = #480000 1'b1;
-	J1_SEL[1] = #30000 1'b0;
 end 
 // J1_SEL[ 0 ]
 initial
 begin
-	J1_SEL[0] = 1'b0;
+	J1_SEL[0] = 1'b1;
+end 
+
+// J2_APERTOU
+initial
+begin
+	J2_APERTOU = 1'b0;
+	J2_APERTOU = #170000 1'b1;
+	J2_APERTOU = #260000 1'b0;
+	J2_APERTOU = #350000 1'b1;
+	J2_APERTOU = #170000 1'b0;
 end 
 // J2_SEL[ 3 ]
 initial
 begin
-	J2_SEL[3] = 1'b0;
-	J2_SEL[3] = #80000 1'b1;
-	J2_SEL[3] = #50000 1'b0;
+	J2_SEL[3] = 1'b1;
+	J2_SEL[3] = #380000 1'b0;
+	J2_SEL[3] = #160000 1'b1;
 end 
 // J2_SEL[ 2 ]
 initial
 begin
 	J2_SEL[2] = 1'b0;
-	J2_SEL[2] = #360000 1'b1;
-	J2_SEL[2] = #20000 1'b0;
 end 
 // J2_SEL[ 1 ]
 initial
@@ -152,12 +165,8 @@ end
 initial
 begin
 	J2_SEL[0] = 1'b0;
-	J2_SEL[0] = #80000 1'b1;
-	J2_SEL[0] = #50000 1'b0;
-	J2_SEL[0] = #230000 1'b1;
-	J2_SEL[0] = #20000 1'b0;
-	J2_SEL[0] = #220000 1'b1;
-	J2_SEL[0] = #50000 1'b0;
+	J2_SEL[0] = #380000 1'b1;
+	J2_SEL[0] = #160000 1'b0;
 end 
 endmodule
 

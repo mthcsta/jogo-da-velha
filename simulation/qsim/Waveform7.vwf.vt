@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/24/2021 11:31:44"
+// Generated on "05/24/2021 11:33:00"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          jogo_da_velha
 // 
@@ -88,7 +88,7 @@ jogo_da_velha i1 (
 );
 initial 
 begin 
-#1000000 $stop;
+#1000000 $finish;
 end 
 
 // CLK
@@ -134,7 +134,7 @@ initial
 begin
 	J2_SEL[3] = 1'b0;
 	J2_SEL[3] = #80000 1'b1;
-	J2_SEL[3] = #50000 1'b0;
+	J2_SEL[3] = #240000 1'b0;
 end 
 // J2_SEL[ 2 ]
 initial
@@ -153,8 +153,8 @@ initial
 begin
 	J2_SEL[0] = 1'b0;
 	J2_SEL[0] = #80000 1'b1;
-	J2_SEL[0] = #50000 1'b0;
-	J2_SEL[0] = #230000 1'b1;
+	J2_SEL[0] = #240000 1'b0;
+	J2_SEL[0] = #40000 1'b1;
 	J2_SEL[0] = #20000 1'b0;
 	J2_SEL[0] = #220000 1'b1;
 	J2_SEL[0] = #50000 1'b0;

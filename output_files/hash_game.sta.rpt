@@ -1,5 +1,5 @@
 Timing Analyzer report for hash_game
-Thu May 20 20:02:40 2021
+Sun May 23 20:11:22 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -99,12 +99,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.6%      ;
+;     Processors 2-4         ;   0.5%      ;
 +----------------------------+-------------+
 
 
@@ -1030,8 +1030,8 @@ No synchronizer chains to report.
 ; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
 +-------------------------+--------------+-----------------+-----------------+
 ; CLK                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; J2_ATIVO                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; J1_ATIVO                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; J2_APERTOU              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; J1_APERTOU              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; RESET                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; J2_SEL[3]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; J1_SEL[3]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -1365,12 +1365,12 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
-; J1_ATIVO   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; J1_APERTOU ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; J1_SEL[0]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; J1_SEL[1]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; J1_SEL[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; J1_SEL[3]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; J2_ATIVO   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; J2_APERTOU ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; J2_SEL[0]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; J2_SEL[1]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; J2_SEL[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -1432,12 +1432,12 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
-; J1_ATIVO   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; J1_APERTOU ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; J1_SEL[0]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; J1_SEL[1]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; J1_SEL[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; J1_SEL[3]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; J2_ATIVO   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; J2_APERTOU ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; J2_SEL[0]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; J2_SEL[1]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; J2_SEL[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -1500,7 +1500,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu May 20 20:02:39 2021
+    Info: Processing started: Sun May 23 20:11:20 2021
 Info: Command: quartus_sta hash_game -c hash_game
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1573,8 +1573,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 626 megabytes
-    Info: Processing ended: Thu May 20 20:02:40 2021
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Sun May 23 20:11:22 2021
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

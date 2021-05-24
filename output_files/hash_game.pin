@@ -147,8 +147,8 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : E11       :        :                   :      
 GNDA2                        : E12       : gnd    :                   :         :           :                
 GND                          : E13       : gnd    :                   :         :           :                
 VCCIO6                       : E14       : power  :                   : 2.5V    : 6         :                
-J1_ATIVO                     : E15       : input  : 2.5 V             :         : 6         : N              
-J2_ATIVO                     : E16       : input  : 2.5 V             :         : 6         : N              
+J1_APERTOU                   : E15       : input  : 2.5 V             :         : 6         : N              
+J2_APERTOU                   : E16       : input  : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : F1        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F2        :        :                   :         : 1         :                
 QUADRO7[5]                   : F3        : output : 2.5 V             :         : 1         : N              
