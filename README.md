@@ -14,9 +14,8 @@ Vazio: representado pelo 8
 Para a seleção de cada jogador foi utilizado o Interruptor Dip Rotativo (em inglês Rotary Dip Switch) **A6R-101RS**.   
 
 <div align="center">
-    <img src="https://github.com/mthcsta/jogo-da-velha/blob/master/readme_content/rotary-dip.png" align="center" />   
-      
-      Rotary Dip Switch A6R-101RS (<a href="https://omronfs.omron.com/en_US/ecb/products/pdf/en-a6r_rv.pdf">datasheet</a>) 
+    <img src="https://github.com/mthcsta/jogo-da-velha/blob/master/readme_content/rotary-dip.png" align="center" />    
+    Rotary Dip Switch A6R-101RS (<a href="https://omronfs.omron.com/en_US/ecb/products/pdf/en-a6r_rv.pdf">datasheet</a>) 
 </div>  
   
   
